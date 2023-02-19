@@ -1,17 +1,20 @@
 import Head from 'next/head'
+import Header from '@/components/Header'
+import Main from '@/components/Main'
+import Footer from '@/components/Footer'
+import Background from '@/components/Background'
 
 export default function Home() {
     return (
         <>
             <Head>
-                <title>Project Play</title>
+                <title>Project Play | Game.Play.Give | Thank You</title>
                 <meta name='description' content='Project Play' />
-                <meta
-                    name='viewport'
-                    content='width=device-width, initial-scale=1'
-                />
             </Head>
-            <div></div>
+            <Header className={'container'} />
+            <Main className={'container'} />
+            <Footer className={'container'} />
+            <Background />
         </>
     )
 }

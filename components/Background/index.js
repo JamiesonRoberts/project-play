@@ -5,48 +5,30 @@ import styles from './index.module.css'
 
 export default function Background({ className, ...rest }) {
     const canvasRef = useRef(null)
-    const draw = (canvas, ctx) => {
-        canvas.width = window.innerWidth
-        canvas.height = window.innerHeight
 
-        var stars = [], // Array that contains the stars
-            FPS = 60, // Frames per second
-            x = 100, // Number of stars
-            mouse = {
-                x: 0,
-                y: 0,
-            } // mouse location
+    let stars = []
+    let FPS = 60
 
-        // Push stars to array
+    const distance = (point1, point2) => {
+        let xs = 0
+        let ys = 0
 
-        for (var i = 0; i < x; i++) {
-            stars.push({
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
-                radius: Math.random() * 1 + 1,
-                vx: Math.floor(Math.random() * 50) - 25,
-                vy: Math.floor(Math.random() * 50) - 25,
-            })
-        }
-        function distance(point1, point2) {
-            var xs = 0
-            var ys = 0
+        xs = point2.x - point1.x
+        xs = xs * xs
 
-            xs = point2.x - point1.x
-            xs = xs * xs
+        ys = point2.y - point1.y
+        ys = ys * ys
 
-            ys = point2.y - point1.y
-            ys = ys * ys
+        return Math.sqrt(xs + ys)
+    }
 
-            return Math.sqrt(xs + ys)
-        }
-
-        ctx.clearRect(0, 0, canvas.width, canvas.height)
+    const draw = (ctx) => {
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
 
         ctx.globalCompositeOperation = 'lighter'
 
-        for (var i = 0, x = stars.length; i < x; i++) {
-            var s = stars[i]
+        for (let i = 0, x = stars.length; i < x; i++) {
+            let s = stars[i]
 
             ctx.fillStyle = '#fff'
             ctx.beginPath()
@@ -57,14 +39,13 @@ export default function Background({ className, ...rest }) {
         }
 
         ctx.beginPath()
-        for (var i = 0, x = stars.length; i < x; i++) {
-            var starI = stars[i]
+        for (let i = 0, x = stars.length; i < x; i++) {
+            let starI = stars[i]
             ctx.moveTo(starI.x, starI.y)
-            if (distance(mouse, starI) < 150) ctx.lineTo(mouse.x, mouse.y)
-            for (var j = 0, x = stars.length; j < x; j++) {
-                var starII = stars[j]
+
+            for (let j = 0, y = stars.length; j < y; j++) {
+                let starII = stars[j]
                 if (distance(starI, starII) < 150) {
-                    //ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
                     ctx.lineTo(starII.x, starII.y)
                 }
             }
@@ -74,12 +55,50 @@ export default function Background({ className, ...rest }) {
         ctx.stroke()
     }
 
+    const update = (ctx) => {
+        for (var i = 0, x = stars.length; i < x; i++) {
+            var s = stars[i]
+
+            s.x += s.vx / FPS
+            s.y += s.vy / FPS
+
+            if (s.x < 0 || s.x > ctx.canvas.width) s.vx = -s.vx
+            if (s.y < 0 || s.y > ctx.canvas.height) s.vy = -s.vy
+        }
+    }
+
     useEffect(() => {
         const canvas = canvasRef.current
         const context = canvas.getContext('2d')
-        //Our draw came here
-        draw(canvas, context)
-    }, [])
+
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight
+
+        let animationFrameId
+
+        if (stars.length === 0) {
+            for (let i = 0; i < 100; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() + 1,
+                    vx: Math.floor(Math.random() * 50) - 25,
+                    vy: Math.floor(Math.random() * 50) - 25,
+                })
+            }
+        }
+
+        const render = () => {
+            draw(context)
+            update(context)
+            animationFrameId = window.requestAnimationFrame(render)
+        }
+        render()
+
+        return () => {
+            window.cancelAnimationFrame(animationFrameId)
+        }
+    }, [draw])
 
     return (
         <canvas

@@ -5,3 +5,11 @@
     gap: 0.5rem;
     padding: 5rem 0;
 }
+
+.subText {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 8px;
+    text-align: center;
+}

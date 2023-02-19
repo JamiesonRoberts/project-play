@@ -53,11 +53,9 @@ export default function Background({ className, ...rest }) {
         ctx.lineWidth = 0.05
         ctx.strokeStyle = 'white'
         ctx.stroke()
-    }
 
-    const update = (ctx) => {
-        for (var i = 0, x = stars.length; i < x; i++) {
-            var s = stars[i]
+        for (let i = 0, x = stars.length; i < x; i++) {
+            let s = stars[i]
 
             s.x += s.vx / FPS
             s.y += s.vy / FPS
@@ -90,7 +88,6 @@ export default function Background({ className, ...rest }) {
 
         const render = () => {
             draw(context)
-            update(context)
             animationFrameId = window.requestAnimationFrame(render)
         }
         render()

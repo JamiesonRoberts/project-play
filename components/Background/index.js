@@ -75,7 +75,8 @@ export default function Background({ className, ...rest }) {
         let animationFrameId
 
         if (stars.length === 0) {
-            for (let i = 0; i < 100; i++) {
+            let count = window.innerWidth < 600 ? 50 : 100
+            for (let i = 0; i < count; i++) {
                 stars.push({
                     x: Math.random() * canvas.width,
                     y: Math.random() * canvas.height,
@@ -96,6 +97,27 @@ export default function Background({ className, ...rest }) {
             window.cancelAnimationFrame(animationFrameId)
         }
     }, [draw])
+
+    useEffect(() => {
+        const onResize = () => {
+            let canvas = canvasRef.current
+            const { width, height } = canvas.getBoundingClientRect()
+
+            if (canvas.width !== width || canvas.height !== height) {
+                canvas.width = width
+                canvas.height = height
+                return true
+            }
+
+            return false
+        }
+
+        window.addEventListener('resize', onResize)
+
+        return () => {
+            window.removeEventListener('resize', onResize)
+        }
+    }, [])
 
     return (
         <canvas

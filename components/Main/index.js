@@ -40,7 +40,7 @@ export default function Header({ className, ...rest }) {
                                 'https://www.londonpubliclibrary.ca/story/2018/03/09/borrow-board-game-play-home'
                             }
                             target={'_blank'}
-                            rel={'noopener nofollow'}
+                            rel={'noreferrer nofollow'}
                         >
                             - London Public Library
                         </a>

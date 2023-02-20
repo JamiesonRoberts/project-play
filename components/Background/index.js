@@ -69,13 +69,13 @@ export default function Background({ className, ...rest }) {
         const canvas = canvasRef.current
         const context = canvas.getContext('2d')
 
-        canvas.width = window.innerWidth
-        canvas.height = window.innerHeight
+        canvas.width = window.innerWidth * 1.1
+        canvas.height = window.innerHeight * 1.1
 
         let animationFrameId
 
         if (stars.length === 0) {
-            let count = window.innerWidth < 600 ? 50 : 100
+            let count = (window.innerWidth / 16) * 1.425
             for (let i = 0; i < count; i++) {
                 stars.push({
                     x: Math.random() * canvas.width,

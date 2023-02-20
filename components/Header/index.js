@@ -15,7 +15,7 @@ export default function Header({ className, ...rest }) {
                 width={75}
                 height={103}
             />
-            <h1>
+            <h1 className={styles.text}>
                 PROJECT PLAY
                 <span className={styles.subText}>Game.Play.Give</span>
             </h1>

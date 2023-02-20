@@ -17,7 +17,22 @@ export default function Header({ className, ...rest }) {
             />
             <h1 className={styles.text}>
                 PROJECT PLAY
-                <span className={styles.subText}>Game.Play.Give</span>
+                <span className={styles.subText}>
+                    <span>G</span>
+                    <span>a</span>
+                    <span>m</span>
+                    <span>e</span>
+                    <span>.</span>
+                    <span>P</span>
+                    <span>l</span>
+                    <span>a</span>
+                    <span>y</span>
+                    <span>.</span>
+                    <span>G</span>
+                    <span>i</span>
+                    <span>v</span>
+                    <span>e</span>
+                </span>
             </h1>
         </header>
     )

@@ -9,7 +9,7 @@ export default function Footer({ className, ...rest }) {
             <div className={styles.footerRow}>
                 <ul
                     aria-label={
-                        'A list of other websites and services that Project Play is on, links will open new tabs or windows.'
+                        'A list of other websites that Project Play is on, links will open new tabs or windows.'
                     }
                     className={styles.externalLinkList}
                 >

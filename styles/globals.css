@@ -30,7 +30,6 @@
 }
 
 
-
 body {
     margin: 1rem;
     background-color: var(--background);
@@ -58,11 +57,20 @@ header, footer {
 }
 
 .container {
-    max-width: 90rem;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 1rem 2rem;
     position: relative;
     z-index: 2;
+}
+
+.visually-hidden, .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }
 
 

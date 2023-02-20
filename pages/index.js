@@ -12,7 +12,10 @@ export default function Home() {
                     Project Play | Game.Play.Give | Thank you for 6 amazing
                     years
                 </title>
-                <meta name='description' content='Project Play' />
+                <meta
+                    name='description'
+                    content='Thank you for 6 amazing years of Project Play. You helped us make Project Play bigger, and made it last longer than we ever planned. And, you made it fun - thanks again!'
+                />
             </Head>
             <Header className={'container'} />
             <Main className={'container'} />

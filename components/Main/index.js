@@ -80,6 +80,9 @@ export default function Header({ className, ...rest }) {
                 </p>
             </section>
             <section className={styles.section}>
+                <h3>Previous Donation Recipients</h3>
+            </section>
+            <section className={styles.section}>
                 <h2>Thank you, #ldnont (London), for 6 amazing years!</h2>
                 <p>
                     <strong>The Origin Story</strong>: Founders Greg and Mathew

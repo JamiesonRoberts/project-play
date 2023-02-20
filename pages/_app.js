@@ -3,7 +3,10 @@ import { Ubuntu, Source_Sans_Pro } from '@next/font/google'
 import PlausibleProvider from 'next-plausible'
 
 const ubuntu = Ubuntu({ weight: '400', subsets: ['latin'] })
-const sourceSansPro = Source_Sans_Pro({ weight: '400', subsets: ['latin'] })
+const sourceSansPro = Source_Sans_Pro({
+    weight: ['400', '700'],
+    subsets: ['latin'],
+})
 
 import '@/styles/globals.css'
 

@@ -81,6 +81,78 @@ export default function Header({ className, ...rest }) {
             </section>
             <section className={styles.section}>
                 <h2>Thank you, #ldnont (London), for 6 amazing years!</h2>
+                <p>
+                    <strong>The Origin Story</strong>: Founders Greg and Mathew
+                    really did just conceive the idea over a shared platter of
+                    chicken wings. “What if we held a gaming event, but made it
+                    actually do some good for the community?”
+                </p>
+
+                <p>
+                    <strong>The Supporting Cast</strong>: A crew of awesome
+                    volunteers quickly assembled, as well as fantastic partners
+                    who would be with us for our many years - like Digital
+                    Extremes, Big Blue Bubble, Uber Cool Stuff, Fanshawe
+                    College, LEDC and the Game Chamber
+                </p>
+
+                <p>
+                    <strong>The Super Powers</strong>: We quickly realized that
+                    by bringing together all of London’s gaming community, we
+                    could raise a ton of money to help out organizations like
+                    Merrymount Family Crisis Centre, Women’s Community House and
+                    London Children’s Hospital. Over the years, we donated
+                    bundles of TVs, video games and board games to places where
+                    children in tough circumstances might find themselves - so
+                    that these kids and their families could tap into “the power
+                    of play” to find a bit of normalcy and fun during a rough
+                    time.
+                </p>
+
+                <p>
+                    <strong>The Amazing Run</strong>: Project Play held 6 annual
+                    gaming events, raised over $40,000 to donate back to the
+                    community, and helped out 20 different community centres and
+                    agencies in the London area. We were also nominated for -
+                    and won - a{' '}
+                    <Link
+                        href={'https://pcia.pillarnonprofit.ca/'}
+                        target={'_blank'}
+                        rel={'noopener noreferrer'}
+                    >
+                        Pillar Community Award for Innovation
+                    </Link>
+                    . You can see it for yourself: go to the wall across from
+                    the central library to see all the Pillar award winners.
+                    We’re forever there! :)
+                </p>
+
+                <p>
+                    <strong>The Epic Team-Up</strong>: In 2015, Project Play
+                    joined forces with{' '}
+                    <Link
+                        href={'https://forestcitycomicon.ca'}
+                        target={'_blank'}
+                        rel={'noopener noreferrer'}
+                    >
+                        Forest City ComicCon
+                    </Link>
+                    , who helped us put on even bigger, better events that
+                    brought in more people to support us. What a great
+                    partnership!
+                </p>
+
+                <p>
+                    <strong>The last words</strong>: To every single one of you
+                    who shared their time, money, energy or their creations with
+                    us - thank you so much! You helped us make Project Play
+                    bigger, and made it last longer than we ever planned. And,
+                    you made it To every single one of you who shared their
+                    time, money, energy or their creations with us - thank you
+                    so much! You helped us make Project Play bigger, and made it
+                    last longer than we ever planned. And, you made it fun -
+                    thanks again!
+                </p>
             </section>
         </main>
     )

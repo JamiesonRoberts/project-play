@@ -52,8 +52,8 @@ a:hover, a:focus {
     color: #cdcdcd;
 }
 
-header, footer {
-    color: var(--foreground)
+strong {
+    font-weight: bold;
 }
 
 .container {

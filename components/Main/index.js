@@ -147,11 +147,7 @@ export default function Header({ className, ...rest }) {
                     who shared their time, money, energy or their creations with
                     us - thank you so much! You helped us make Project Play
                     bigger, and made it last longer than we ever planned. And,
-                    you made it To every single one of you who shared their
-                    time, money, energy or their creations with us - thank you
-                    so much! You helped us make Project Play bigger, and made it
-                    last longer than we ever planned. And, you made it fun -
-                    thanks again!
+                    you made it fun - thanks again!
                 </p>
             </section>
         </main>

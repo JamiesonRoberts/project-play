@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Link from 'next/link'
 import classNames from 'classnames'
 
 import styles from './index.module.css'
@@ -17,7 +17,7 @@ export default function Header({ className, ...rest }) {
                     support, but the giving the gift of gaming back to all of
                     London, with a partnership with the London Public Library.
                 </p>
-                <figure>
+                <figure className={styles.figure}>
                     <blockquote
                         className={styles.pullQuote}
                         cite={
@@ -32,24 +32,55 @@ export default function Header({ className, ...rest }) {
                         also require the use of numeracy skills and help expand
                         vocabulary, especially for those learning English. Even
                         social skills like waiting your turn and losing
-                        gracefully are being practiced.&quot;
+                        gracefully are being practiced.
+                        <br />
+                        <br />
+                        Perhaps the greatest benefit to playing board games is
+                        that they are a fun way to connect across age, ability,
+                        language and culture. And now Londoners, regardless of
+                        circumstance, have access to this great resource through
+                        their Library thanks to the generous support of local
+                        organization Project Play.&quot;
                     </blockquote>
                     <figcaption>
-                        <a
+                        <Link
                             href={
                                 'https://www.londonpubliclibrary.ca/story/2018/03/09/borrow-board-game-play-home'
                             }
                             target={'_blank'}
-                            rel={'noreferrer nofollow'}
+                            rel={'noopener noreferrer'}
                         >
                             - London Public Library
-                        </a>
+                        </Link>
                     </figcaption>
                 </figure>
-                <p></p>
+                <p>
+                    To find out what games are available at your local branch,
+                    search the{' '}
+                    <Link
+                        href={
+                            'https://encore.londonpubliclibrary.ca/iii/encore/?lang=eng'
+                        }
+                        target={'_blank'}
+                        rel={'noopener noreferrer'}
+                    >
+                        London Public Library catalog
+                    </Link>{' '}
+                    for &quot;Games to go&quot;, or browse the{' '}
+                    <Link
+                        href={
+                            'http://encore.londonpubliclibrary.ca/iii/encore/search/C__S%22games%20to%20go%22__Orightresult__U?'
+                        }
+                        target={'_blank'}
+                        rel={'noopener noreferrer'}
+                    >
+                        catalog here and filter by your local branch
+                    </Link>
+                    .
+                </p>
             </section>
             <section className={styles.section}>
-                <h2>Thank you, London, for 6 amazing years!</h2>
+                <h2>Thank you, #ldnont (London), for 6 amazing years!</h2>
             </section>
         </main>
     )

@@ -24,8 +24,8 @@
 
 .subText {
     display: block;
-    font-size: 0.5em;
+    font-size: 0.5125em;
     font-weight: normal;
-    letter-spacing: 8px;
+    letter-spacing: 0.5em;
     text-align: center;
 }

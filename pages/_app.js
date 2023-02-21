@@ -51,6 +51,9 @@ const App = ({ Component, pageProps }) => {
                     --ubuntu: ${ubuntu.style.fontFamily};
                     --source: ${sourceSansPro.style.fontFamily};
                 }
+                html {
+                    background-color: #0061c2;
+                }
             `}</style>
             <Component {...pageProps} />
         </PlausibleProvider>

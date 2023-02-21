@@ -13,9 +13,9 @@ export default function Header({ className, ...rest }) {
                     wings with the goal of giving the gift of gaming back to the
                     community. After 6 years and{' '}
                     <strong>over $40,000 dollars raised</strong>, our legacy is
-                    not only all of the community centers we have been able to
-                    support, but the giving the gift of gaming back to all of
-                    London, with a partnership with the London Public Library.
+                    not only all of the community spaces we have been able to
+                    support, but giving the gift of gaming back to all of London
+                    and area, with a partnership with the London Public Library.
                 </p>
                 <figure className={styles.figure}>
                     <blockquote
@@ -78,9 +78,6 @@ export default function Header({ className, ...rest }) {
                     </Link>
                     .
                 </p>
-            </section>
-            <section className={styles.section}>
-                <h3>Past Donations</h3>
             </section>
             <section className={styles.section}>
                 <h2>Thank you, #ldnont (London), for 6 amazing years!</h2>

@@ -75,7 +75,7 @@ export default function Background({ className, ...rest }) {
         let animationFrameId
 
         if (stars.length === 0) {
-            let count = (window.innerWidth / 16) * 1.5
+            let count = (window.innerWidth / 16) * 1.65
             for (let i = 0; i < count; i++) {
                 stars.push({
                     x: Math.random() * canvas.width,

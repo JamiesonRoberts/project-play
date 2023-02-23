@@ -15,6 +15,60 @@ const moduleExports = {
         // a non-locale prefixed path e.g. `/hello`
         defaultLocale: 'en-CA',
     },
+    async redirects() {
+        return [
+            {
+                source: '/blog',
+                destination: '/', // Matched parameters can be used in the destination
+                permanent: true,
+            },
+            {
+                source: '/blog/:slug',
+                destination: '/', // Matched parameters can be used in the destination
+                permanent: true,
+            },
+            {
+                source: '/schedule',
+                destination: '/', // Matched parameters can be used in the destination
+                permanent: true,
+            },
+            {
+                source: '/schedule/:slug',
+                destination: '/', // Matched parameters can be used in the destination
+                permanent: true,
+            },
+            {
+                source: '/slideshow',
+                destination: '/', // Matched parameters can be used in the destination
+                permanent: true,
+            },
+            {
+                source: '/slideshow/:slug',
+                destination: '/', // Matched parameters can be used in the destination
+                permanent: true,
+            },
+            {
+                source: '/speaker',
+                destination: '/', // Matched parameters can be used in the destination
+                permanent: true,
+            },
+            {
+                source: '/speaker/:slug',
+                destination: '/', // Matched parameters can be used in the destination
+                permanent: true,
+            },
+            {
+                source: '/tag/:slug',
+                destination: '/', // Matched parameters can be used in the destination
+                permanent: true,
+            },
+            {
+                source: '/splash/',
+                destination: '/', // Matched parameters can be used in the destination
+                permanent: true,
+            },
+        ]
+    },
     sentry: {
         // See the 'Configure Source Maps' and 'Configure Legacy Browser Support'
         // sections below for information on the following options:

@@ -1,0 +1,36 @@
+.footer {
+    padding: 3rem 0;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footerRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+}
+
+.externalLinkList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 1rem;
+}
+
+.externalLink {
+    display: flex;
+    align-items: center;
+}
+
+.externalLinkSVGIcon {
+    height: 2rem;
+    width: auto;
+}
+
+.footerSVG {
+    width: 1.75rem;
+}

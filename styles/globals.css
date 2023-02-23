@@ -1,41 +1,76 @@
 :root {
-
+    --background: #0061C2;
+    --foreground: #FFFFFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+    img[loading="lazy"] {
+        clip-path: inset(0.6px)
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    /* turns off smooth-scrolling behavior (if turned on) when prefers-reduced-motion is active*/
-    scroll-behavior: auto;
-  }
+    html:focus-within {
+        /* turns off smooth-scrolling behavior (if turned on) when prefers-reduced-motion is active*/
+        scroll-behavior: auto;
+    }
 
-  *:not(.animates-without-motion),
-  *:not(.animates-without-motion)::before,
-  *:not(.animates-without-motion)::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    *:not(.animates-without-motion),
+    *:not(.animates-without-motion)::before,
+    *:not(.animates-without-motion)::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 *, *::before, *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+
 body {
-  margin: 0;
+    margin: 1rem;
+    background-color: var(--background);
+    font-family: var(--source);
+    color: var(--foreground);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ubuntu);
+    line-height: 1.1;
+}
+
+a {
+    color: var(--foreground);
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover, a:focus {
+    color: #cdcdcd;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.visually-hidden, .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }
 
 

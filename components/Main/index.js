@@ -11,11 +11,11 @@ export default function Header({ className, ...rest }) {
                 <p>
                     Project Play was founded over a shared platter of chicken
                     wings with the goal of giving the gift of gaming back to the
-                    community. After 6 years and{' '}
-                    <strong>over $40,000 dollars raised</strong>, our legacy is
-                    not only all of the community spaces we have been able to
-                    support, but giving the gift of gaming back to all of London
-                    and area, with a partnership with the London Public Library.
+                    community. After 6 years,{' '}
+                    <strong>over $40,000 dollars raised</strong>, helping out 20
+                    different community centres and agencies; our final legacy
+                    is giving the gift of gaming back to all of London and area,
+                    with a partnership with the London Public Library.
                 </p>
                 <figure className={styles.figure}>
                     <blockquote

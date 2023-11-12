@@ -7,14 +7,6 @@
 const { withSentryConfig } = require('@sentry/nextjs')
 
 const moduleExports = {
-    i18n: {
-        // These are all the locales you want to support in
-        // your application
-        locales: ['en-CA'],
-        // This is the default locale you want to be used when visiting
-        // a non-locale prefixed path e.g. `/hello`
-        defaultLocale: 'en-CA',
-    },
     async redirects() {
         return [
             {
@@ -73,7 +65,6 @@ const moduleExports = {
         // See the 'Configure Source Maps' and 'Configure Legacy Browser Support'
         // sections below for information on the following options:
         hideSourceMaps: true,
-        autoInstrumentServerFunctions: false,
     },
 }
 
@@ -85,7 +76,6 @@ const sentryWebpackPluginOptions = {
     //   urlPrefix, include, ignore
 
     silent: true, // Suppresses all logs
-    hideSourceMaps: true,
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options.
 }

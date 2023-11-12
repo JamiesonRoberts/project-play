@@ -1,12 +1,44 @@
 import Link from 'next/link'
-import classNames from 'classnames'
 
-import styles from './index.module.css'
+const sectionStyles = {
+    position: 'relative',
+    padding: '1rem',
+    backdropFilter: 'blur(0.25rem)',
+}
 
-export default function Header({ className, ...rest }) {
+const title = 'Project Play | Game.Play.Give | Thank you for 6 amazing years'
+const description =
+    'Thank you for 6 amazing years of Project Play. You helped us make Project Play bigger, and made it last longer than we ever planned. And, you made it fun - thanks again!'
+const url = 'https://projectplay.ca/'
+const images = [{ url: '/project-play-social.jpg', alt: 'Project Play Logo with the text "Project Play - Game Play Give"' }]
+
+export const metadata = {
+    title,
+    description,
+    openGraph: {
+        type: 'website',
+        locale: 'en_CA',
+        url,
+        title,
+        description,
+        images,
+    },
+    twitter: {
+        card: 'summary_large_image',
+        url,
+        title,
+        description,
+        images,
+    },
+    alternates: {
+        canonical: '/',
+    },
+}
+
+export default function Page() {
     return (
-        <main {...rest} className={classNames(className, styles.main)}>
-            <section className={styles.section}>
+        <>
+            <section style={sectionStyles}>
                 <h2>The Project Play Legacy</h2>
                 <p>
                     Project Play was founded over a shared platter of chicken
@@ -17,9 +49,9 @@ export default function Header({ className, ...rest }) {
                     is giving the gift of gaming back to all of London and area,
                     with a partnership with the London Public Library.
                 </p>
-                <figure className={styles.figure}>
+                <figure style={{ margin: '1rem 1.25rem' }}>
                     <blockquote
-                        className={styles.pullQuote}
+                        style={{ margin: '0 auto 1rem', fontStyle: 'italic' }}
                         cite={
                             'https://www.londonpubliclibrary.ca/story/2018/03/09/borrow-board-game-play-home'
                         }
@@ -79,7 +111,7 @@ export default function Header({ className, ...rest }) {
                     .
                 </p>
             </section>
-            <section className={styles.section}>
+            <section style={sectionStyles}>
                 <h2>Thank you, #ldnont (London), for 6 amazing years!</h2>
                 <p>
                     <strong>The Origin Story</strong>: Founders Greg and Mathew
@@ -150,6 +182,6 @@ export default function Header({ className, ...rest }) {
                     you made it fun - thanks again!
                 </p>
             </section>
-        </main>
+        </>
     )
 }

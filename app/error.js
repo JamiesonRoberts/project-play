@@ -1,10 +1,11 @@
-import Head from 'next/head'
+'use client'
+
 import Link from 'next/link'
 import Background from '@/components/Background'
 
 const layoutStyles = {
-    minHeight: 'calc(100vh - 2rem)',
-    width: 'calc(100vw - 2rem)',
+    minHeight: 'calc(100vh - 1rem)',
+    width: 'calc(100vw - 1rem)',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -14,16 +15,12 @@ const layoutStyles = {
     zIndex: 2,
 }
 
-export default function Home() {
+export default function Error() {
     return (
         <>
-            <Head>
-                <title>404 - Page not found</title>
-            </Head>
-
             <main style={layoutStyles}>
-                <h1>404 - Page Not Found</h1>
-                <Link href={'/'}>Return back to the main page</Link>
+                <h1>Whoops - Something didn&apos;t quite go right there</h1>
+                <Link href='/'>Return back to the main page</Link>
             </main>
             <Background />
         </>

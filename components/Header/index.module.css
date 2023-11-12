@@ -1,25 +1,5 @@
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 3rem 0;
-}
-
-@media (min-width: 37.5rem) {
-    .header {
-        padding: 5rem 0;
-    }
-}
-
 .text {
     font-size: 1.875rem;
-}
-
-@media (min-width: 37.5rem) {
-    .text {
-        font-size: 2rem;
-    }
 }
 
 .subText {

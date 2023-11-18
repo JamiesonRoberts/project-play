@@ -3,12 +3,6 @@
     --foreground: #FFFFFF;
 }
 
-@supports (font: -apple-system-body) and (-webkit-appearance: none) {
-    img[loading="lazy"] {
-        clip-path: inset(0.6px)
-    }
-}
-
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
         /* turns off smooth-scrolling behavior (if turned on) when prefers-reduced-motion is active*/
@@ -25,13 +19,11 @@
     }
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
+html {
+    background-color: var(--background);
 }
 
-
 body {
-    margin: 1rem;
     background-color: var(--background);
     font-family: var(--source);
     color: var(--foreground);
@@ -55,22 +47,3 @@ a:hover, a:focus {
 strong {
     font-weight: bold;
 }
-
-.container {
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    position: relative;
-    z-index: 2;
-}
-
-.visually-hidden, .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
-}
-
-

@@ -1,3 +1,0 @@
-Sitemap: https://projectplay.ca/sitemap.xml
-User-agent:*
-Disallow:

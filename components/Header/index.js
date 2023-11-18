@@ -1,19 +1,18 @@
 import Image from 'next/image'
-import classNames from 'classnames'
 
-import logo from '@/public/pp-weblogo-joystick.png'
+import logo from '@/public/pp-joystick.png'
 
 import styles from './index.module.css'
 
-export default function Header({ className, ...rest }) {
+export default function Header() {
     return (
-        <header {...rest} className={classNames(className, styles.header)}>
+        <>
             <Image
                 src={logo}
                 alt={'Project Play Joystick'}
                 priority={true}
-                width={75}
-                height={103}
+                width={73}
+                height={100}
             />
             <h1 className={styles.text}>
                 PROJECT PLAY
@@ -34,6 +33,6 @@ export default function Header({ className, ...rest }) {
                     <span>e</span>
                 </span>
             </h1>
-        </header>
+        </>
     )
 }

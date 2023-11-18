@@ -1,9 +1,18 @@
+'use client'
+
 import { useEffect, useRef } from 'react'
-import classNames from 'classnames'
 
-import styles from './index.module.css'
+const canvas = {
+    position: 'fixed',
+    zIndex: 1,
+    overflow: 'hidden',
+    width: '110vw',
+    height: '110vh',
+    top: '-5%',
+    left: '-5%',
+}
 
-export default function Background({ className, ...rest }) {
+export default function Background() {
     const canvasRef = useRef(null)
 
     useEffect(() => {
@@ -119,11 +128,5 @@ export default function Background({ className, ...rest }) {
         }
     }, [])
 
-    return (
-        <canvas
-            ref={canvasRef}
-            className={classNames(className, styles.canvas)}
-            {...rest}
-        />
-    )
+    return <canvas ref={canvasRef} style={canvas} />
 }

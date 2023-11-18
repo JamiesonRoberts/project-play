@@ -1,0 +1,32 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1800" width="512" height="512">
+	<title>pp-favicon-svg</title>
+	<style>
+		.s0 { fill: #1e1e1e } 
+		.s1 { fill: #0061c2 } 
+		.s2 { fill: #fcb042 } 
+		.s3 { fill: #c7352c } 
+		.s4 { fill: #f15a2c } 
+		.s5 { fill: #ef4137 } 
+		.s6 { fill: #f15b39 } 
+		.s7 { fill: #f37631 } 
+		.s8 { fill: #e77924 } 
+		.s9 { fill: #f68e27 } 
+		.s10 { fill: #f79622 } 
+		.s11 { opacity: .6;fill: #ffffff } 
+	</style>
+	<path id="Layer" class="s0" d="m0 0h1800v1800h-1800z"/>
+	<path id="Layer" class="s1" d="m0 0h1800v1800h-1800z"/>
+	<path id="Layer" fill-rule="evenodd" class="s2" d="m804.6 1099.3l-524.6 143.7 620.5 169 620.5-169-524.7-143.7v146.3l-95.8 25.2-95.9-25.3z"/>
+	<path id="Layer" fill-rule="evenodd" class="s3" d="m280 1581v-338l620.5 169zm620.5-169l620.4-169v338zm0-736.5h257.3l-98.4-257.3h98.4v257.3l-161.4 98.1-95.9 58.3z"/>
+	<path id="Layer" fill-rule="evenodd" class="s4" d="m900.5 1750l-620.5-169 620.5-169zm-95.9-976.3l95.9 58.2v438.9l-95.9-25.2z"/>
+	<path id="Layer" class="s4" d="m804.6 773.6l95.9 58.3v-156.4h-257.3z"/>
+	<path id="Layer" fill-rule="evenodd" class="s5" d="m996.3 1245.5l-95.8 25.3v-438.9l95.8-58.3zm-95.8 504.5v-338l620.5 169zm158.9-1331.8l98.3 257.3h-257.2z"/>
+	<path id="Layer" fill-rule="evenodd" class="s6" d="m741.6 418.2l158.9 257.3 158.9-257.3z"/>
+	<path id="Layer" fill-rule="evenodd" class="s7" d="m900.5 675.5v156.4l-95.9-58.3-161.4-98.1 98.4-257.3z"/>
+	<path id="Layer" fill-rule="evenodd" class="s8" d="m900.5 675.5v156.4l-95.9-58.3-161.4-98.1zm0-418.7l257.3 161.4h-98.4z"/>
+	<path id="Layer" fill-rule="evenodd" class="s9" d="m643.2 418.2h98.4l-98.4 257.3z"/>
+	<path id="Layer" fill-rule="evenodd" class="s10" d="m1059.4 418.2l-158.9-161.4-158.9 161.4z"/>
+	<path id="Layer" fill-rule="evenodd" class="s2" d="m741.6 418.2h-98.4l257.3-161.4z"/>
+	<path id="Layer" class="s2" d="m996.3 1245.5l-95.8 25.3-95.9-25.3v-146.2l-524.6 143.7 620.5 169 620.5-169-524.7-143.7z"/>
+	<path id="Layer" fill-rule="evenodd" class="s11" d="m643.2 675.5l161.4 98.1v174.3l-327.9-206.8v-428.8l423.8-262.3 423.7 262.3v428.8l-327.9 206.8v-174.3l161.4-98.1v-257.3l-257.2-161.4-257.3 161.4z"/>
+</svg>

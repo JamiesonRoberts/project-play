@@ -3,6 +3,7 @@ import Link from 'next/link'
 const sectionStyles = {
     position: 'relative',
     padding: '1rem',
+    WebkitBackdropFilter: 'blur(0.25rem)',
     backdropFilter: 'blur(0.25rem)',
 }
 

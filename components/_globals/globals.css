@@ -1,49 +1,55 @@
 :root {
-    --background: #0061C2;
-    --foreground: #FFFFFF;
+  --background: #0061c2;
+  --foreground: #ffffff;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        /* turns off smooth-scrolling behavior (if turned on) when prefers-reduced-motion is active*/
-        scroll-behavior: auto;
-    }
+  html:focus-within {
+    /* turns off smooth-scrolling behavior (if turned on) when prefers-reduced-motion is active*/
+    scroll-behavior: auto;
+  }
 
-    *:not(.animates-without-motion),
-    *:not(.animates-without-motion)::before,
-    *:not(.animates-without-motion)::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *:not(.animates-without-motion),
+  *:not(.animates-without-motion)::before,
+  *:not(.animates-without-motion)::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 html {
-    background-color: var(--background);
+  background-color: var(--background);
 }
 
 body {
-    background-color: var(--background);
-    font-family: var(--source);
-    color: var(--foreground);
-    line-height: 1.5;
+  background-color: var(--background);
+  font-family: var(--source);
+  color: var(--foreground);
+  line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--ubuntu);
-    line-height: 1.1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ubuntu);
+  line-height: 1.1;
 }
 
 a {
-    color: var(--foreground);
-    transition: color 0.2s ease-in-out;
+  color: var(--foreground);
+  transition: color 0.2s ease-in-out;
 }
 
-a:hover, a:focus {
-    color: #cdcdcd;
+a:hover,
+a:focus {
+  color: #cdcdcd;
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }

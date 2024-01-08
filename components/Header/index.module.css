@@ -1,11 +1,11 @@
 .text {
-    font-size: 1.875rem;
+  font-size: 1.875rem;
 }
 
 .subText {
-    font-size: 0.5em;
-    display: flex;
-    font-weight: normal;
-    justify-content: space-between;
-    padding-right: 0.3rem;
+  font-size: 0.5em;
+  display: flex;
+  font-weight: normal;
+  justify-content: space-between;
+  padding-right: 0.3rem;
 }

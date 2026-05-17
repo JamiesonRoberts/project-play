@@ -10,6 +10,7 @@ export default defineConfig({
       cssVariable: '--ubuntu',
       fallbacks: ['Helvetica Neue', 'Helvetica'],
       subsets: ['latin'],
+      display: 'block',
     },
     {
       provider: fontProviders.google(),

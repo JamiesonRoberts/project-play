@@ -18,6 +18,7 @@ export default defineConfig({
       cssVariable: '--source',
       fallbacks: ['Helvetica Neue', 'Helvetica'],
       subsets: ['latin'],
+      display: 'block',
     },
   ],
 
